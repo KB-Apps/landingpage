@@ -3,12 +3,12 @@
     "apps": [],
     "details": [
       {
-        "appID": "com.kb.TestAppQR3",
+        "appID": "TEAMID.com.kb.TestAppQR3",
         "paths": [ "/landingpage/*", "/clip/*" ]
       }
     ]
   },
   "appclips": {
-    "apps": [ "com.kb.TestAppQR3.Clip" ]
+    "apps": [ "TEAMID.com.kb.TestAppQR3.Clip" ]
   }
 }

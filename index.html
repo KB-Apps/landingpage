@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Test – landingpage</title>
+  <meta name="description" content="En enkel testsida på GitHub Pages.">
+  <style>
+    :root {
+      --bg:#0b1220; --card:#121826; --text:#e5e7eb; --muted:#94a3b8; --link:#60a5fa; --ring:rgba(96,165,250,.35);
+    }
+    *{box-sizing:border-box} html,body{height:100%}
+    body{
+      margin:0; font-family:-apple-system,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif; color:var(--text);
+      background: radial-gradient(900px 400px at 100% 0%, #1f2a44 0%, transparent 60%), var(--bg);
+      display:grid; place-items:center; padding:24px;
+    }
+    .card{
+      width:100%; max-width:420px; background:var(--card); border:1px solid rgba(255,255,255,.06);
+      border-radius:16px; padding:22px; box-shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    .avatar{
+      width:110px; height:110px; border-radius:50%; object-fit:cover; display:block; margin:0 auto 14px;
+      border:3px solid rgba(255,255,255,.12); background:#0b1220;
+    }
+    h1{font-size:1.5rem; margin:0 0 6px; text-align:center}
+    .title{color:var(--muted); text-align:center; margin-bottom:14px}
+    .bio{color:#cbd5e1; text-align:center; line-height:1.5; margin:12px 0 18px}
+    .links{display:grid; gap:10px}
+    .row{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center; padding:12px 14px; border-radius:10px;
+      text-decoration:none; color:white; background:#2563eb; background:linear-gradient(180deg,#3b82f6,#2563eb);
+      border:1px solid rgba(255,255,255,.12); box-shadow:0 6px 18px rgba(37,99,235,.25);
+      transition:transform .08s ease, box-shadow .12s ease;
+    }
+    .btn:hover{transform:translateY(-1px); box-shadow:0 10px 24px rgba(37,99,235,.35)}
+    .btn.alt{background:linear-gradient(180deg,#22c55e,#16a34a); box-shadow:0 6px 18px rgba(22,163,74,.25)}
+    .contact{margin-top:12px; border-top:1px dashed rgba(255,255,255,.12); padding-top:12px; color:var(--muted); font-size:.95rem}
+    .contact a{color:#bfdbfe; text-decoration:none} .contact a:hover{text-decoration:underline}
+    footer{margin-top:10px; text-align:center; color:#94a3b8; font-size:.85rem}
+    .center{text-align:center}
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <!-- Lägg upp en bild som profile.jpg, eller byt src till din fil -->
+    <img class="avatar" src="./profile.jpg" alt="Profilbild" width="110" height="110" />
+    <h1>Ditt Namn</h1>
+    <div class="title">Titel / Roll · Stad</div>
+    <p class="bio">Detta är en enkel testsida (digitalt visitkort) som körs på GitHub Pages.</p>
+
+    <div class="links" aria-label="Länkar">
+      <a class="btn" href="https://github.com/KB-Apps" target="_blank" rel="noopener">GitHub</a>
+      <div class="row">
+        <a class="btn alt" href="https://www.linkedin.com/in/ditt-anvandarnamn" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://www.instagram.com/ditt-anvandarnamn" target="_blank" rel="noopener">Instagram</a>
+      </div>
+      <div class="row">
+        <a class="btn" href="https://twitter.com/ditt-anvandarnamn" target="_blank" rel="noopener">X / Twitter</a>
+        <a class="btn alt" href="mailto:namn@example.com">E‑post</a>
+      </div>
+      <a class="btn" href="tel:+46700000000">Telefon</a>
+    </div>
+
+    <div class="contact center">
+      Kontakt: <a href="mailto:namn@example.com">namn@example.com</a> · <a href="tel:+46700000000">+46 70 000 00 00</a>
+    </div>
+    <footer>© <span id="year"></span> Ditt Namn · Test</footer>
+  </main>
+  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>

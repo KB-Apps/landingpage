@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "TEAMID.YOUR_APP_BUNDLE_ID",
+        "paths": [ "/landingpage/*", "/clip/*" ]
+      }
+    ]
+  },
+  "appclips": {
+    "apps": [ "TEAMID.YOUR_APP_CLIP_BUNDLE_ID" ]
+  }
+}
